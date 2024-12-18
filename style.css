@@ -434,7 +434,7 @@ header {
     border: 1px solid #99B39A;
     border-radius: 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 20px 0; /* Adds spacing */
+    margin: 20px auto; /* Adds spacing */
 }
 
 .contact-title {
@@ -563,4 +563,10 @@ html, body {
 
 html {
     scroll-behavior: smooth;
+}
+
+@media only screen and (min-width: 1200px) {
+    .contact-support {
+    width: 60%;
+    }
 }
