@@ -297,5 +297,4 @@ nav {
 
 .prev:hover, .next:hover, .close-btn:hover {
     color: #99B39A;
-    transform: scale(1.1);
 }
