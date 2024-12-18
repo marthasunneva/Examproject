@@ -1,0 +1,566 @@
+@font-face {
+    font-family: 'Clash Display';
+    src: url('ClashDisplay-Semibold.woff2') format('woff2');
+    font-weight: 600; /* Semibold */
+}
+
+@font-face {
+    font-family: 'Clash Display Variable';
+    src: url('ClashDisplay-Regular.woff2') format('woff2');
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+body {
+    font-family: 'Questrial', sans-serif;
+    background-color: #FAF8EE; /* Overall background color */
+    color: #162217; /* Default text color */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    color: #FAF8EE;
+}
+
+
+header .logo h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+header .logo p {
+    font-size: 1rem;
+    margin: 0;
+    opacity: 0.8;
+}
+
+nav {
+    display: flex;
+    gap: 20px; /* Adjust to increase or decrease the space */
+}
+
+.btn {
+    border: 1px solid #FAF8EE;
+    background: transparent;
+    color: #FAF8EE;
+    padding: 5px 15px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FAF8EE;
+    color: #162217;
+}
+
+/* Hero Section */
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.hero .content {
+    flex: 1 1 40%;
+    text-align: left;
+}
+
+.hero .content .title {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 600; /* Semibold */
+    font-size: 3rem;
+    letter-spacing: 2px;
+    color: #99B39A;
+}
+
+.hero .content .underline {
+    width: 50px;
+    height: 2px;
+    background-color: #99B39A;
+    margin: 10px 0;
+}
+
+.hero .content p {
+    margin: 10px 0;
+}
+
+.hero .content .highlight {
+    color: #99B39A;
+}
+
+.hero .image {
+    flex: 1 1 55%;
+}
+
+.hero .image img {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+}
+
+.explore-more {
+    text-align: center;
+    margin-top: 20px; 
+    color: #FAF8EE; 
+}
+
+.explore-more .underline {
+    width: 60px;
+    height: 2px;
+    background-color: #FAF8EE;
+    margin: 10px auto; /* Centers the underline */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero .content, .hero .image {
+        flex: 1 1 100%;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav .btn {
+        margin: 10px 0;
+    }
+}
+
+
+body {
+    font-family: 'Questrial', sans-serif;
+    background-color: #FAF8EE; /* Overall background color */
+    color: #162217; /* Default text color */
+    line-height: 1.6;
+}
+
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #162217; /* Dark background for header */
+    color: #FAF8EE;
+    padding: 10px 20px;
+}
+
+.logo h1 {
+    font-family: 'Clash Display Variable', sans-serif;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.btn {
+    background: transparent;
+    border: 1px solid #FAF8EE;
+    color: #FAF8EE;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FAF8EE;
+    color: #162217;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    background-color: #162217; /* Dark background for hero section */
+    color: #FAF8EE; /* Light text color */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero .content .title {
+    font-family: 'Clash Display Variable', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero .underline {
+    width: 19px;
+    height: 2px;
+    background-color: #FAF8EE;
+    margin: 10px auto;
+}
+
+.hero p {
+    margin-bottom: 10px;
+}
+
+.hero .highlight {
+    color: #99B39A;
+}
+
+.hero .image img {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+    border-radius: 0;
+}
+
+/* About Section */
+.about-section {
+    background-color: #FAF8EE; /* Light background */
+    color: #162217; /* Dark text color */
+    text-align: center;
+    padding: 60px 20px; /* Adds spacing */
+    box-sizing: border-box;
+}
+
+.about-title {
+    font-family: 'Clash Display Variable', sans-serif;
+    font-size: 2rem;
+    color: #99B39A; /* Subheading color */
+    margin-bottom: 10px;
+}
+
+.about-section .underline {
+    width: 60px;
+    height: 2px;
+    background-color: #99B39A;
+    margin: 10px auto 20px; /* Spacing under title */
+}
+
+.about-section p {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 800px; /* Controls text width for better readability */
+}
+
+
+/* Hidden Treasures Section */
+.hidden-treasures {
+    background-color: #FAF8EE; /* Light background for second section */
+    color: #162217;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.subheading {
+    font-family: 'Clash Display Variable', sans-serif;
+    font-size: 2rem;
+    color: #99B39A;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-title {
+    font-family: 'Clash Display Variable', sans-serif;
+    font-size: 1.4rem;
+    margin: 15px 0;
+}
+
+.read-more {
+    background-color: #99B39A;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #7F9B80;
+}
+
+/* Explore Safely, Travel Smart Section */
+.travel-tips {
+    background-color: #FAF8EE; 
+    color: #162217; 
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.tips-title {
+    font-family: 'Clash Display Variable', sans-serif;
+    font-size: 2rem;
+    color: #99B39A;
+    margin-bottom: 10px;
+}
+
+.underline {
+    width: 60px;
+    height: 2px;
+    background-color: #99B39A;
+    margin: 10px auto 20px;
+}
+
+.tips-subtitle {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+/* Travel Tips Container */
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout for medium screens */
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Force center alignment for the fourth box on large screens */
+@media (min-width: 1024px) {
+    .tips-container {
+        grid-template-columns: repeat(3, 1fr); /* Three-column layout for large screens */
+    }
+    
+    .tips-container .tip-box:nth-child(4) {
+        grid-column: 2 / 3; /* Places the fourth box in the center column */
+        justify-self: center;
+    }
+}
+
+/* Single column layout for small screens */
+@media (max-width: 768px) {
+    .tips-container {
+        grid-template-columns: 1fr; /* One column layout */
+    }
+
+    .tips-container .tip-box:nth-child(4) {
+        grid-column: auto; /* Resets placement */
+    }
+}
+
+/* Tip Boxes Styling */
+.tip-box {
+    background-color: #99B39A; /* Green background */
+    color: #162217; 
+    padding: 20px;
+    border-radius: 0px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tip-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tip-title {
+    font-family: 'Clash Display Variable', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.tip-text {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Responsive Grid Layout */
+@media (min-width: 768px) {
+    .tips-container {
+        grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+    }
+}
+
+@media (min-width: 1024px) {
+    .tips-container {
+        grid-template-columns: repeat(3, 1fr); /* Three-column layout for larger screens */
+    }
+}
+
+/* Contact Support Section */
+.contact-support {
+    grid-column: 1 / -1; /* Full width in grid */
+    background-color: #FAF8EE; /* Light background */
+    color: #162217; /* Dark text color */
+    text-align: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    border: 1px solid #99B39A;
+    border-radius: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0; /* Adds spacing */
+}
+
+.contact-title {
+    font-family: 'Clash Display Variable', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.contact-description,
+.contact-instructions {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-input,
+.contact-textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #99B39A; /* Green border */
+    border-radius: 5px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1rem;
+    color: #99B39A;
+    background-color: transparent;
+    outline: none;
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+    color: #99B39A; /* Placeholder color */
+}
+
+.contact-btn {
+    background-color: transparent;
+    color: #162217;
+    border: 1px solid #162217;
+    padding: 10px 20px;
+    font-family: 'Questrial', sans-serif;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #99B39A; /* Green background on hover */
+    color: #FAF8EE;
+    border: 1px solid #99B39A;
+}
+
+/* Reset any padding/margin issues */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+
+/* Footer Section */
+.footer {
+    background-color: #162217; 
+    color: #FAF8EE; 
+    width: 100%; /* Ensure full width */
+    margin: 0; /* Reset margins */
+    padding: 30px 0; /* Top and bottom padding */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 15px;
+}
+
+.footer-title {
+    font-family: 'Clash Display Variable', sans-serif;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.footer-subtitle {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-socials a {
+    display: inline-block;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+
+
+/* Ensures smooth scrolling */
+
+html {
+    scroll-behavior: smooth;
+}
